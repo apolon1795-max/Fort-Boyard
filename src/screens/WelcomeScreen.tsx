@@ -3,12 +3,11 @@ import { motion } from 'motion/react';
 export default function WelcomeScreen({ onNext }: { onNext: () => void }) {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-end p-6 overflow-hidden">
-      {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center mix-blend-overlay opacity-50"
-        style={{ backgroundImage: 'url(https://picsum.photos/seed/fortboyard_hq/1080/1920)' }}
+        className="absolute inset-0 z-0 bg-cover bg-[center_top] mix-blend-overlay opacity-60"
+        style={{ backgroundImage: 'url(https://i.ibb.co/tpJVW1hc/ig-00b0998f5c841a1c0169ec6633b59881918cc7d12e954c28de.png)' }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#020617] via-[#020617]/80 to-transparent" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#020617] via-[#020617]/80 to-[#020617]/20" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}

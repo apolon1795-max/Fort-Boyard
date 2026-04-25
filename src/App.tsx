@@ -2,7 +2,6 @@ import { useState } from 'react';
 import WelcomeScreen from './screens/WelcomeScreen';
 import MainMenuScreen from './screens/MainMenuScreen';
 import BookingScreen from './screens/BookingScreen';
-import DiscountsScreen from './screens/DiscountsScreen';
 import InfoScreen from './screens/InfoScreen';
 import GamesScreen from './screens/GamesScreen';
 import LeaderboardScreen from './screens/LeaderboardScreen';
@@ -24,7 +23,6 @@ export default function App() {
         {screen === 'welcome' && <WelcomeScreen onNext={() => setScreen('main')} />}
         {screen === 'main' && <MainMenuScreen onNavigate={(s) => setScreen(s)} />}
         {screen === 'booking' && <BookingScreen onBack={() => setScreen('main')} />}
-        {screen === 'discounts' && <DiscountsScreen onBack={() => setScreen('main')} />}
         {screen === 'info' && <InfoScreen onBack={() => setScreen('main')} />}
         {screen === 'games' && <GamesScreen onBack={() => setScreen('main')} onNavigate={(s) => setScreen(s)} />}
         {screen === 'leaderboard' && <LeaderboardScreen onBack={() => setScreen('games')} />}
